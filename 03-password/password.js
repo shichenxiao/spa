@@ -1,5 +1,5 @@
 $(function(){
-  $("#btn").click(function(){
+  $(".img").click(function(){
     if($("#password").attr("type")=="password"){
       $("#password").attr("type","text");
     }else{
