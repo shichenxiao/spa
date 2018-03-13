@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>H5验证</title>
-</head>
-<body>
+<html>
+  <head>
+    <title>H5验证/title>
+  </head>
+  <link rel="stylesheet" href="h5check.css">
+  <!--<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>-->
+  <script src="jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="h5check.js"></script>
+  <body>
   <form>
-   <label name="width">宽度</label>
-    <input type="number" min="0" step="0.00001" autofoucus required>
+    <label for="">宽度:</label>
+    <input id="wide" type="number" id="wide" min="0" step="0.00001" required autofocus><span style="color:red;" class="img" id="imgone"></span>
+    <br/> 
+    <label for="">高度:</label>
+    <input id="high" type="number" id="high" min="0" step="0.00001" required autofocus><span style="color:red;" class="img" id="imgtwo"></span>
+    <br>
+    <input class="calc" id="btn" type="submit" value="计算">
+    <br>
+    <label for="">周长:</label>
+    <input class="perimeter" id="add" type="textbox">
+    <br>
+    <label for="">面积:</label>
+    <input class="area" id="mutiply" type="textbox">
+
   </form>
-</body>
+
+  </body>
 </html>
