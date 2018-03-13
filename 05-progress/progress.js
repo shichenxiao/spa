@@ -1,18 +1,17 @@
-function progressBar(){
-  $("#progressbar").css("width","0px");
-  var speed = 20;
 
-var time = setInterval(function(){
-    nowWidth = parseInt($("#progressbar").width());
-    
-    if(nowWidth<=200){
-      barWidth = (nowWidth + 1)+"px";
-      $("#progressbar").css("width",barWidth);
-    }else{
-      clearInterval(time);
-    }
-  },speed);
+function progressBar(){
+  var pg = document.getElementById('pg');
+  setInterval(function(e){
+    if(pg.value!=100) pg.value++;
+    else pg.value=100;
+  },100);
 }
-function pause(){
-    progressBar();
+
+function reset(){
+  var pg=0;
+  setInterval(function(e){
+    if(pg.value!=100) pg.value++;
+    else pg.value = 100;
+  },100);
 }
+
