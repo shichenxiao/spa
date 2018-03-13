@@ -1,18 +1,20 @@
 $(function(){
+  
     $("#wide").blur(function(){
-       if($("#wide").val()==""){
-
-         $("#one").html("输入不能为空！");
+       if($("#wide").val()===""){
+         $("#one").html("<br/>输入不能为空！");
          $("#one").css("color","red");
          $("#one").css("font-size","12px");
+
        }else{
          $("#one").html("");
        }
+       
     });
 $("#high").blur(function(){
        if($("#high").val()==""){
-        
-         $("#two").html("输入不能为空！");
+
+         $("#two").html("<br/>输入不能为空！");
          $("#two").css("color","red");  
           $("#two").css("font-size","12px");
 
