@@ -6,8 +6,12 @@ function progressBar(){
     else pg.value=100;
   },100);
 }
-function pause(){  
-  clearInterval(bar); 
+function pause(){
+  var pg= document.getElementById('pg');
+  var stop = (pg.value-100)>0?bar-100:0;
+    for(var i = stop;i<=bar;i++){
+  clearInterval(i); 
+}
 }
 function reset(){
   var pg = document.getElementById('pg');
