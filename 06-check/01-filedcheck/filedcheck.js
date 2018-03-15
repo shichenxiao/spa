@@ -6,20 +6,26 @@ $(function(){
          $("#one").css("color","red");
          $("#one").css("font-size","12px");
 
-       }else{
+       }else if(isNaN($('#wide').val())){
+           $("#one").html("<br/>请输入数值！");
+         $("#one").css("color","red");  
+          $("#one").css("font-size","12px");
+
+       }
+
+       else{
          $("#one").html("");
        }
        
     });
 $("#high").blur(function(){
-      var reg = /^\d+(\.{0,1}\d+){0,1}$/;
        if($("#high").val()==""){
 
          $("#two").html("<br/>输入不能为空！");
          $("#two").css("color","red");  
           $("#two").css("font-size","12px");
 
-       }else if(!reg.test($('#high').val())){
+       }else if(isNaN($('#high').val())){
            $("#two").html("<br/>请输入数值！");
          $("#two").css("color","red");  
           $("#two").css("font-size","12px");
