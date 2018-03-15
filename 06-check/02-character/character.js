@@ -1,5 +1,5 @@
 $(function(){
-  var reg = /^(\d+(\.{0,1})\d+){0,1}|(e)$/;
+    var reg = /(^\d+(\.{0,1}\d+){0,1})|(e)$/;
     $("#wide").blur(function(){
        if($("#wide").val()===""){
          $("#one").html("<br/>输入不能为空！");
